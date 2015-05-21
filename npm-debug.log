@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/iojs', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.10.0
+3 info using node@v2.0.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/sebastiansandqvist/Documents/Sites & Projects/apps/modules/s-zipcode',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/sebastiansandqvist/Documents/Sites & Projects/apps/modules/s-zipcode' ]
+10 verbose tarball /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package.tgz
+11 verbose folder /Users/sebastiansandqvist/Documents/Sites & Projects/apps/modules/s-zipcode
+12 info prepublish @ljp/s-zipcode@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package.tgz
+14 silly cache afterAdd @ljp/s-zipcode@1.0.0
+15 verbose afterAdd /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package/package.json written
+17 silly publish { name: '@ljp/s-zipcode',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'Get coordinates of any zip code',
+17 silly publish   main: 'index.js',
+17 silly publish   directories: { test: 'test' },
+17 silly publish   scripts:
+17 silly publish    { test: 'mocha',
+17 silly publish      coverage_html: 'mocha --require blanket -R html-cov > etc/coverage.html',
+17 silly publish      coverage: 'mocha --require blanket --reporter mocha-lcov-reporter > etc/lcov.info' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/sebastiansandqvist/s-zipcode.git' },
+17 silly publish   keywords: [ 'zipcode', 'coordinates', 'latitude', 'longitude' ],
+17 silly publish   author: { name: 'sebastian sandqvist' },
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/sebastiansandqvist/s-zipcode/issues' },
+17 silly publish   homepage: 'https://github.com/sebastiansandqvist/s-zipcode',
+17 silly publish   devDependencies:
+17 silly publish    { blanket: '1.1.6',
+17 silly publish      chai: '^2.3.0',
+17 silly publish      'codeclimate-test-reporter': '0.0.4',
+17 silly publish      gulp: '^3.8.11',
+17 silly publish      'gulp-jshint': '^1.10.0',
+17 silly publish      'gulp-mocha': '^2.0.1',
+17 silly publish      'jshint-stylish': '^1.0.2',
+17 silly publish      mocha: '^2.2.5',
+17 silly publish      'mocha-lcov-reporter': '0.0.2' },
+17 silly publish   dependencies: {},
+17 silly publish   readme: '# s-zipcode\n## Made for Let\'s Join Paws\n\nThis module returns all zip codes given a state. Zip codes are an array of objects including the properties:\n\n* `cityState` {String}\n* `latitude` {Number}\n* `longitude` {Number}\n* `zip.` {String}',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'e83094db31dbffb338defd35b2fef5c6095ac83a',
+17 silly publish   _id: '@ljp/s-zipcode@1.0.0',
+17 silly publish   _shasum: '6cf3c324b92b99da7144144f72699327ccfd6617',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name @ljp/s-zipcode
+20 silly mapToRegistry scope (from package name) @ljp
+21 verbose mapToRegistry no registry URL found in name for scope @ljp
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/@ljp%2fs-zipcode
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /Users/sebastiansandqvist/.npm/@ljp/s-zipcode/1.0.0/package.tgz
+27 verbose request uri https://registry.npmjs.org/@ljp%2fs-zipcode
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 18:25:25
+30 verbose request using bearer token for auth
+31 verbose request id a8e825dd8124d4b6
+32 http request PUT https://registry.npmjs.org/@ljp%2fs-zipcode
+33 http 500 https://registry.npmjs.org/@ljp%2fs-zipcode
+34 info retry will retry, error on last attempt: Error: unexpected status code: 404 : @ljp/s-zipcode
+35 info attempt registry request try #2 at 18:25:37
+36 verbose request using bearer token for auth
+37 http request PUT https://registry.npmjs.org/@ljp%2fs-zipcode
+38 http 500 https://registry.npmjs.org/@ljp%2fs-zipcode
+39 info retry will retry, error on last attempt: Error: unexpected status code: 404 : @ljp/s-zipcode
+40 info attempt registry request try #3 at 18:26:38
+41 verbose request using bearer token for auth
+42 http request PUT https://registry.npmjs.org/@ljp%2fs-zipcode
+43 http 500 https://registry.npmjs.org/@ljp%2fs-zipcode
+44 verbose headers { 'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=0',
+44 verbose headers   'content-length': '39',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Thu, 21 May 2015 01:26:40 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1432171598.650947,VS0,VE2205' }
+45 verbose request invalidating /Users/sebastiansandqvist/.npm/registry.npmjs.org/_40ljp_252fs-zipcode on PUT
+46 error publish Failed PUT 500
+47 verbose stack Error: unexpected status code: 404 : @ljp/s-zipcode
+47 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+47 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+47 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+47 verbose stack     at emitTwo (events.js:87:13)
+47 verbose stack     at Request.emit (events.js:172:7)
+47 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+47 verbose stack     at emitOne (events.js:82:20)
+47 verbose stack     at Request.emit (events.js:169:7)
+47 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+47 verbose stack     at emitNone (events.js:72:20)
+48 verbose statusCode 500
+49 verbose pkgid @ljp/s-zipcode
+50 verbose cwd /Users/sebastiansandqvist/Documents/Sites & Projects/apps/modules/s-zipcode
+51 error Darwin 13.4.0
+52 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "publish"
+53 error node v2.0.2
+54 error npm  v2.10.0
+55 error code E500
+56 error unexpected status code: 404 : @ljp/s-zipcode
+57 error If you need help, you may report this error at:
+57 error     <https://github.com/npm/npm/issues>
+58 verbose exit [ 1, true ]
