@@ -28,7 +28,9 @@ module.exports = function(state) {
 			latitude: parseFloat(zipsInState[j].latitude),
 			longitude: parseFloat(zipsInState[j].longitude),
 			cityState: zipsInState[j].city + ', ' + zipsInState[j].state,
-			zip: zipsInState[j].zip
+			zip: zipsInState[j].zip,
+			city: zipsInState[j].city,
+			state: zipsInState[j].state
 		};
 
 		formattedZips.push(current);
