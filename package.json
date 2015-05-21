@@ -1,5 +1,5 @@
 {
-  "name": "s-zipcode",
+  "name": "@ljp/s-zipcode",
   "version": "1.0.0",
   "description": "Get coordinates of any zip code",
   "main": "index.js",
