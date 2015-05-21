@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage_html": "mocha --require blanket -R html-cov > etc/coverage.html",
+    "coverage": "mocha --require blanket --reporter mocha-lcov-reporter > etc/lcov.info"
   },
   "repository": {
     "type": "git",
