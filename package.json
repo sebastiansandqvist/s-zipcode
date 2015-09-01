@@ -1,6 +1,6 @@
 {
-  "name": "@sebastiansandqvist/s-zipcode",
-  "version": "1.2.1",
+  "name": "@seabass/s-zipcode",
+  "version": "1.2.2",
   "description": "Get coordinates of any zip code",
   "main": "index.js",
   "directories": {
