@@ -1,5 +1,7 @@
 # s-zipcode
-## Made for Let's Join Paws
+## Made for one-time use on letsjoinpaws.com
+
+Not recommended for production use.
 
 This module returns all zip codes given a state. Zip codes are an array of objects including the properties:
 
@@ -8,4 +10,4 @@ This module returns all zip codes given a state. Zip codes are an array of objec
 * `longitude` {Number}
 * `zip.` {String}
 
-Takes up a ton of memory and should only be used once to save these records to a database.
+Warning: Takes up a ton of memory and should only be used once to save these records to a database.
